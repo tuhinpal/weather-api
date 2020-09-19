@@ -4,7 +4,7 @@
     "description": "Fetch your Weather from your IP's Location",
     "main": "main.js",
     "scripts": {
-        "test": "node main.js"
+        "start": "node main.js"
     },
     "dependencies": {
         "express": "^4.17.1",
