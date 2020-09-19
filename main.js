@@ -6,7 +6,7 @@ const express = require('express')
 var OAuth = require('oauth');
 var request = require('request');
 const app = express()
-const port = 3000
+const port = 8080
 
 app.get('/', (req, res) => {
 
@@ -71,5 +71,5 @@ app.get('/', (req, res) => {
     res.header('Open-Source', 'https://github.com/cachecleanerjeet/weather-api');
 })
 app.listen(port, () => {
-    console.log('Listening on Port 3000')
+    console.log('Listening on Port 8080')
 })
