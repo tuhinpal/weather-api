@@ -3,8 +3,8 @@
 //Contact me@mailtuhin.ml
 
 const express = require('express')
-var OAuth = require('oauth');
-var request = require('request');
+const OAuth = require('oauth');
+const request = require('request');
 const app = express()
 const port = 8080
 
