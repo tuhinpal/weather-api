@@ -58,7 +58,7 @@ app.get('/auto', (req, res) => {
                 header
             );
             requestweather.get(
-                'https://weather-ydn-yql.media.yahoo.com/forecastrss?lat=' + lat + '&lon=' + lon + '&format=json',
+                'https://weather-ydn-yql.media.yahoo.com/forecastrss?lat=' + lat + '&lon=' + lon + '&format=json&u=c',
                 null,
                 null,
                 function(err, data, result) {
@@ -98,7 +98,7 @@ app.get('/loc', (req, res) => {
         header
     );
     requestweather.get(
-        'https://weather-ydn-yql.media.yahoo.com/forecastrss?location=' + location + '&format=json',
+        'https://weather-ydn-yql.media.yahoo.com/forecastrss?location=' + location + '&format=json&u=c',
         null,
         null,
         function(err, data, result) {
@@ -136,7 +136,7 @@ app.get('/geolocation', (req, res) => {
         header
     );
     requestweather.get(
-        'https://weather-ydn-yql.media.yahoo.com/forecastrss?lat=' + lat + '&lon=' + lon + '&format=json',
+        'https://weather-ydn-yql.media.yahoo.com/forecastrss?lat=' + lat + '&lon=' + lon + '&format=json&u=c',
         null,
         null,
         function(err, data, result) {
