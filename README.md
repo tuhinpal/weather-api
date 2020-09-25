@@ -42,47 +42,55 @@ https://weather.thetuhin.com/?lat=23.66188&lon=87.697304
 
 ```json
 {
-    "location": {
-        "city": "Bolpur",
-        "region": " WB",
-        "woeid": 2289871,
-        "country": "India",
-        "lat": 23.66188,
-        "long": 87.697304,
-        "timezone_id": "Asia/Kolkata"
+  "location": {
+    "city": "Bolpur",
+    "region": " WB",
+    "woeid": 2289871,
+    "country": "India",
+    "lat": 23.66188,
+    "long": 87.697304,
+    "timezone_id": "Asia/Kolkata"
+  },
+  "current_observation": {
+    "wind": {
+      "chill": 30,
+      "direction": 203,
+      "speed": 12
     },
-    "current_observation": {
-        "wind": {
-            "chill": 91,
-            "direction": 68,
-            "speed": 3.73
-        },
-        "atmosphere": {
-            "humidity": 65,
-            "visibility": 10.0,
-            "pressure": 29.44,
-            "rising": 0
-        },
-        "astronomy": {
-            "sunrise": "5:27 am",
-            "sunset": "5:37 pm"
-        },
-        "condition": {
-            "text": "Scattered Thunderstorms",
-            "code": 47,
-            "temperature": 91
-        },
-        "pubDate": 1600495200
+    "atmosphere": {
+      "humidity": 80,
+      "visibility": 16.1,
+      "pressure": 997,
+      "rising": 0
     },
-    "forecasts": [
-        {
-            "day": "Sat",
-            "date": 1600453800,
-            "low": 78,
-            "high": 92,
-            "text": "Thunderstorms",
-            "code": 4
-        },
+    "astronomy": {
+      "sunrise": "5:29 am",
+      "sunset": "5:31 pm"
+    },
+    "condition": {
+      "text": "Thunderstorms",
+      "code": 4,
+      "temperature": 30
+    },
+    "pubDate": 1601020800
+  },
+  "forecasts": [
+    {
+      "day": "Fri",
+      "date": 1600972200,
+      "low": 26,
+      "high": 30,
+      "text": "Thunderstorms",
+      "code": 4
+    },
+    {
+      "day": "Sat",
+      "date": 1601058600,
+      "low": 25,
+      "high": 30,
+      "text": "Thunderstorms",
+      "code": 4
+    },
         ##More
     ]
 }
@@ -126,6 +134,11 @@ node main.js
 
 <br>
 
+### Using this API:
+- [Weather BOT](https://t.me/weatheroftoday_bot "weather-bot") - [Github](https://github.com/cachecleanerjeet/weather-bot "Github")
+
+*Impliment this API on your Project  & send a message [here](https://t.me/t_projects "here") to get featured in this section.*
+<br>
 
 <br><br>
 ## Star this Repo if you Liked it ⭐⭐⭐
