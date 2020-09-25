@@ -2,13 +2,13 @@ const OAuth = require('oauth');
 module.exports = async(req, res) => {
     var location = req.query.query;
     var header = {
-        "X-Yahoo-App-Id": process.env.YAAHOO_APP_ID
+        "X-Yahoo-App-Id": process.env.YAHOO_APP_ID
     };
     var requestweather = new OAuth.OAuth(
         null,
         null,
-        process.env.YAAHOO_CLIENT_ID,
-        process.env.YAAHOO_CLIENT_SECRET,
+        process.env.YAHOO_CLIENT_ID,
+        process.env.YAHOO_CLIENT_SECRET,
         '1.0',
         null,
         'HMAC-SHA1',
