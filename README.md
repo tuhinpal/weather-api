@@ -83,99 +83,49 @@ https://weather.thetuhin.com/?lat=23.66188&lon=87.697304
             "text": "Thunderstorms",
             "code": 4
         },
-        {
-            "day": "Sun",
-            "date": 1600540200,
-            "low": 80,
-            "high": 96,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Mon",
-            "date": 1600626600,
-            "low": 79,
-            "high": 83,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Tue",
-            "date": 1600713000,
-            "low": 78,
-            "high": 86,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Wed",
-            "date": 1600799400,
-            "low": 78,
-            "high": 87,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Thu",
-            "date": 1600885800,
-            "low": 79,
-            "high": 88,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Fri",
-            "date": 1600972200,
-            "low": 79,
-            "high": 89,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Sat",
-            "date": 1601058600,
-            "low": 78,
-            "high": 89,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Sun",
-            "date": 1601145000,
-            "low": 78,
-            "high": 90,
-            "text": "Thunderstorms",
-            "code": 4
-        },
-        {
-            "day": "Mon",
-            "date": 1601231400,
-            "low": 78,
-            "high": 91,
-            "text": "Cloudy",
-            "code": 26
-        }
+        ##More
     ]
 }
 ```
 
 <br><br>
-### Deploy Your Own:<br>
+### Deploy Your Own:<br><br>
 
-**NodeJS & Npm are Required.**<br>
+**1. Create an App for Yahoo Weather API 👇**
+
+- Open this Url<br>
+<tt>https://developer.yahoo.com/weather/</tt>
+- Go to <tt>'Get your API Keys'</tt> section and click <tt>'Create an App'</tt>.
+- Give a Name of it.
+- Application Type will be <tt>'Web Application'</tt>.
+- Give any URL in <tt>'Redirect URI(s)'</tt>.
+- <tt>'API Permissions'</tt> will be default.
+- Now click on <tt>'Create App'</tt>.
+- You will get <tt>'App ID' & 'Client ID' & 'Client Secret'</tt> in next page.<br><br>
+
+**2. Deploy the API:**<br><br>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cachecleanerjeet/weather-api/tree/master)<br><br>
+
+Deploy to VPS or Local Machine 👇 <br><br>
+*NodeJS & Npm are Required.*<br>
 
 ```bash
-apt install nodejs & npm
+apt install npm
+apt install nodejs
 
 git clone https://github.com/cachecleanerjeet/weather-api.git
 cd weather-api
+
+//edit main.js
+nano main.js
+//after that add your api credentials
+
 npm install
 node main.js
 ```
 
 <br>
 
-**Using Yahoo Weather API, if You want to use own Yahoo API Change Api Details in <tt>main.js</tt>.**
 
 <br><br>
 ## Star this Repo if you Liked it ⭐⭐⭐
