@@ -112,7 +112,8 @@ https://weather.thetuhin.com/?lat=23.66188&lon=87.697304
 - You will get <tt>'App ID' & 'Client ID' & 'Client Secret'</tt> in next page.<br><br>
 
 **2. Deploy the API:**<br><br>
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cachecleanerjeet/weather-api/tree/master)<br><br>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cachecleanerjeet/weather-api/tree/master)<br>
+[![Deploy with Vercel](https://vercel.com/button)](https://github.com/cachecleanerjeet/weather-api/tree/vercel)<br><br>
 
 Deploy to VPS or Local Machine 👇 <br><br>
 *NodeJS & Npm are Required.*<br>
