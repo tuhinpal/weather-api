@@ -6,15 +6,15 @@
     "keywords": ["weather", "weather-api", "yahoo-wezther", "express"],
 
     "env": {
-        "yahoo_weather_app_id": {
+        "APP_ID": {
             "description": "App ID (Get it from https://developer.yahoo.com/weather/ for free)",
             "value": ""
         },
-        "yahoo_weather_client_id": {
+        "CLIENT_ID": {
             "description": "Client ID (Get it from https://developer.yahoo.com/weather/ for free)",
             "value": ""
         },
-        "yahoo_weather_client_secret": {
+        "CLIENT_SECRET": {
             "description": "Client Secret (Get it from https://developer.yahoo.com/weather/ for free)",
             "value": ""
         }

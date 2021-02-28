@@ -1,29 +1,28 @@
 {
     "name": "weather-api",
-    "version": "1.0.0",
-    "description": "Fetch your Weather from your IP's Location",
+    "version": "2.0.0",
+    "description": "World's First Unlimited Free Weather API, Made with NodeJS",
     "main": "main.js",
     "scripts": {
-        "start": "node main.js"
+        "start": "node main.js",
+        "dev": "nodemon main.js"
     },
+    "author": "Tuhin Kanti Pal",
+    "license": "Apache-2.0",
     "dependencies": {
+        "axios": "^0.21.1",
+        "cors": "^2.8.5",
         "express": "^4.17.1",
-        "oauth": "^0.9.15",
-        "request": "^2.88.2"
+        "oauth": "^0.9.15"
     },
+    "devDependencies": {},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/cachecleanerjeet/weather-api.git"
     },
     "keywords": [
-        "weather",
-        "weather-api",
-        "free-weaher-api",
-        "yahoo-weather-api",
-        "weather-from-ip"
+        "weather"
     ],
-    "author": "Tuhin Kanti Pal",
-    "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/cachecleanerjeet/weather-api/issues"
     },

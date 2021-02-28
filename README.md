@@ -1,122 +1,120 @@
-# Weather-API<br>
-#### World's First Unlimited Free Weather API, Made with NodeJS<br><br>
+# Weather-API
+#### World's First Unlimited Free Weather API, Made with NodeJS
 
-**Features:**<br>
-- Auto Fetch Weather using IP's Location.<br>
-- Unlimited API Calls.<br>
-- Weather Forecasts (Next Ten Days).<br>
-- Fetch Weather From Location (City Name).<br>
-- Fetch weather From Geo Location (Lat & Lon).<br>
-- Low Latency.<br>
-- Open Source So Deploy Your Own.<br>
-- Totally Free of Cost.<br><br>
+**Features:**
+- Auto Fetch Weather using IP's Location.
+- Unlimited API Calls.
+- Weather Forecasts (Next Ten Days).
+- Fetch Weather From Location (City Name).
+- Fetch weather From Geo Location (Lat & Lon).
+- Open Source So Deploy Your Own.
+- Totally Free of Cost.
 
-### API Calls (Method : GET):<br><br>
+### API Calls (Method : GET):
 
-**Automatically fetch weather from IP's Location (Only works if server & client connects directly [No Proxy]):**<br>
+**Automatically fetch weather from IP's Location (Only works if server & client connects directly [No Proxy]):**
 
 ```html
 https://[YOUR-URL]/auto
+
 ##ex
-https://weather.thetuhin.com/auto
+https://tidang.deta.dev/auto
 ```
 
-**Manually Fetch weather From Location:**<br>
+**Manually Fetch weather From Location:**
 
 ```html
-https://[YOUR-URL]/loc?query={PLACE-NAME}
+https://[YOUR-URL]/location/{PLACE-NAME}
+
 ##ex
-https://weather.thetuhin.com/loc?query=bolpur
+https://tidang.deta.dev/location/kolkata
 ```
 
 
-**Fetch weather From GEO Location:**<br>
+**Fetch weather From GEO Location:**
 
 ```html
-https://[YOUR-URL]/geolocation?lat={Latitude}&lon={Longitude}
+https://[YOUR-URL]/geolocation/{Latitude}/{Longitude}
+
 ##ex
-https://weather.thetuhin.com/?lat=23.66188&lon=87.697304
+https://tidang.deta.dev/geolocation/22.54994/88.371582
 ```
 
 ### Result:
 
 ```json
 {
-  "location": {
-    "city": "Bolpur",
-    "region": " WB",
-    "woeid": 2289871,
-    "country": "India",
-    "lat": 23.66188,
-    "long": 87.697304,
-    "timezone_id": "Asia/Kolkata"
-  },
-  "current_observation": {
-    "wind": {
-      "chill": 30,
-      "direction": 203,
-      "speed": 12
-    },
-    "atmosphere": {
-      "humidity": 80,
-      "visibility": 16.1,
-      "pressure": 997,
-      "rising": 0
-    },
-    "astronomy": {
-      "sunrise": "5:29 am",
-      "sunset": "5:31 pm"
-    },
-    "condition": {
-      "text": "Thunderstorms",
-      "code": 4,
-      "temperature": 30
-    },
-    "pubDate": 1601020800
-  },
-  "forecasts": [
-    {
-      "day": "Fri",
-      "date": 1600972200,
-      "low": 26,
-      "high": 30,
-      "text": "Thunderstorms",
-      "code": 4
-    },
-    {
-      "day": "Sat",
-      "date": 1601058600,
-      "low": 25,
-      "high": 30,
-      "text": "Thunderstorms",
-      "code": 4
-    },
-        ##More
-    ]
+    "status": true,
+    "weather_info": {
+        "location": {
+            "city": "Kolkata",
+            "region": " WB",
+            "woeid": 2295386,
+            "country": "India",
+            "lat": 22.54994,
+            "long": 88.371582,
+            "timezone_id": "Asia/Kolkata"
+        },
+        "current_observation": {
+            "wind": {
+                "chill": 26,
+                "direction": 225,
+                "speed": 11
+            },
+            "atmosphere": {
+                "humidity": 63,
+                "visibility": 16.1,
+                "pressure": 1009,
+                "rising": 0
+            },
+            "astronomy": {
+                "sunrise": "5:59 am",
+                "sunset": "5:40 pm"
+            },
+            "condition": {
+                "text": "Sunny",
+                "code": 32,
+                "temperature": 26
+            },
+            "pubDate": 1614481200
+        },
+        "forecasts": [
+            {
+                "day": "Sun",
+                "date": 1614450600,
+                "low": 20,
+                "high": 35,
+                "text": "Sunny",
+                "code": 32
+            },
+            # More
+        ]
+    }
 }
 ```
 
-<br><br>
-### Deploy Your Own:<br><br>
+
+### Deploy Your Own:
 
 **1. Create an App for Yahoo Weather API 👇**
 
-- Open this Url<br>
-<tt>https://developer.yahoo.com/weather/</tt>
-- Go to <tt>'Get your API Keys'</tt> section and click <tt>'Create an App'</tt>.
+- Open this Url <br>
+<code>https://developer.yahoo.com/weather/</code>
+- Go to <code>'Get your API Keys'</code> section and click <code>'Create an App'</code>.
 - Give a Name of it.
-- Application Type will be <tt>'Web Application'</tt>.
-- Give any URL in <tt>'Redirect URI(s)'</tt>.
-- <tt>'API Permissions'</tt> will be default.
-- Now click on <tt>'Create App'</tt>.
-- You will get <tt>'App ID' & 'Client ID' & 'Client Secret'</tt> in next page.<br><br>
+- Application Type will be <code>'Web Application'</code>.
+- Give any URL in <code>'Redirect URI(s)'</code>.
+- <code>'API Permissions'</code> will be default.
+- Now click on <code>'Create App'</code>.
+- You will get <code>'App ID' & 'Client ID' & 'Client Secret'</code> in next page.
 
-**2. Deploy the API:**<br><br>
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cachecleanerjeet/weather-api/tree/master)<br>
-[![Deploy with Vercel](https://vercel.com/button)](https://github.com/cachecleanerjeet/weather-api/tree/vercel)<br><br>
+**2. Deploy the API:**
 
-Deploy to VPS or Local Machine 👇 <br><br>
-*NodeJS & Npm are Required.*<br>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cachecleanerjeet/weather-api/tree/master)
+
+
+Deploy to VPS or Local Machine 👇 
+*NodeJS & Npm are Required.*
 
 ```bash
 apt install npm
@@ -125,49 +123,22 @@ apt install nodejs
 git clone https://github.com/cachecleanerjeet/weather-api.git
 cd weather-api
 
-//edit main.js
-nano main.js
+//edit config.js
+nano config.js
 //after that add your api credentials
 
 npm install
 node main.js
 ```
 
-<br>
+#### Project is comptible with <code>deta.sh</code> 
 
-### Using this API:
-- [Weather BOT](https://t.me/weatheroftoday_bot "weather-bot") - [Github](https://github.com/cachecleanerjeet/weather-bot "Github")
 
-*Impliment this API on your Project  & send a message [here](https://t.me/t_projects "here") to get featured in this section.*
-<br>
+### License & Copyright :
+- This Project is [Apache-2.0](https://github.com/cachecleanerjeet/weather-api/blob/master/LICENSE) Licensed
+- Copyright 2021 by [Tuhin Kanti Pal](https://github.com/cachecleanerjeet)
 
-<br><br>
-## Star this Repo if you Liked it ⭐⭐⭐
-
-<br><br>
-<p align="center"> <b>My Website & Social</b></p>
-<br>
-<p align="center">
- 
- <a href="https://tu.hin.life">
-    <img alt="Website" width="30px" src="https://firebasestorage.googleapis.com/v0/b/webtuhin.appspot.com/o/githubstatic%2Fwebsite.svg?alt=media&token=5c3ea7e0-d4f7-4566-b78a-bdee6c65f03e" />
-  </a>  
-..
-<a href="https://fb.me/jeeetpaul">
-    <img alt="Facebook" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.2.0/icons/facebook.svg" />
-  </a>  
-..
-  <a href="https://www.instagram.com/jeeetpaul">
-    <img alt="Instagram" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.2.0/icons/instagram.svg" />
-  </a>
-..
-  <a href="https://www.youtube.com/channel/UCa4FMtLpYcOBtjKOZgzTFNA">
-    <img alt="YouTube" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.2.0/icons/youtube.svg" />
-  </a>
-..
-  <a href="https://blog.iamtuhin.ga">
-    <img alt="Blogger" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.2.0/icons/blogger.svg" />
-  </a>
-  
-</p>
+### Connect :
+- [Channel](https://telegram.dog/tprojects)
+- [Support Group](https://telegram.dog/t_projects)
 
