@@ -18,7 +18,7 @@
 https://[YOUR-URL]/auto
 
 ##ex
-https://tidang.deta.dev/auto
+https://7ajk43.deta.dev/auto
 ```
 
 **Manually Fetch weather From Location:**
@@ -27,7 +27,7 @@ https://tidang.deta.dev/auto
 https://[YOUR-URL]/location/{PLACE-NAME}
 
 ##ex
-https://tidang.deta.dev/location/kolkata
+https://7ajk43.deta.dev/location/kolkata
 ```
 
 
@@ -37,7 +37,7 @@ https://tidang.deta.dev/location/kolkata
 https://[YOUR-URL]/geolocation/{Latitude}/{Longitude}
 
 ##ex
-https://tidang.deta.dev/geolocation/22.54994/88.371582
+https://7ajk43.deta.dev/geolocation/22.54994/88.371582
 ```
 
 ### Result:
