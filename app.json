@@ -1,22 +1,7 @@
 {
     "name": "Weather API",
-    "description": "World's First Unlimited Free Weather API, Made with NodeJS",
+    "description": "Weather api",
     "repository": "https://github.com/cachecleanerjeet/weather-api",
     "logo": "https://telegra.ph/file/5955945c192ea89150c66.png",
-    "keywords": ["weather", "weather-api", "yahoo-wezther", "express"],
-
-    "env": {
-        "APP_ID": {
-            "description": "App ID (Get it from https://developer.yahoo.com/weather/ for free)",
-            "value": ""
-        },
-        "CLIENT_ID": {
-            "description": "Client ID (Get it from https://developer.yahoo.com/weather/ for free)",
-            "value": ""
-        },
-        "CLIENT_SECRET": {
-            "description": "Client Secret (Get it from https://developer.yahoo.com/weather/ for free)",
-            "value": ""
-        }
-    }
+    "keywords": ["weather", "weather-api", "yahoo-wezther", "express"]
 }
