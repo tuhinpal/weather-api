@@ -1,6 +1,16 @@
 const app = require("express")();
+const cors = require("cors");
 const search = require("./helper/search");
 const auto = require("./helper/auto");
+
+app.use(
+  cors({
+    origin: "*",
+    optionsSuccessStatus: 200,
+  })
+);
+
+app.set("json spaces", 4); /* Format the JSON in a Nice Way */
 
 app.get("/location/:loc", async (req, res) => {
   res.send(await search(req.params.loc));
